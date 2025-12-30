@@ -242,6 +242,22 @@
             background: rgba(13, 2, 33, 0.9);
             border: 2px solid var(--retro-cyan);
             color: var(--retro-cyan);
+        }
+
+        /* Build info (debug) */
+        #build-info {
+            position: fixed;
+            left: 8px;
+            bottom: 8px;
+            z-index: 9999;
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.85);
+            background: rgba(0,0,0,0.35);
+            padding: 4px 8px;
+            border-radius: 6px;
+            pointer-events: none;
+            opacity: 0.95;
+        }
             width: 50px; 
             height: 50px;
             display: flex;
@@ -466,6 +482,7 @@
     </style>
 </head>
 <body>
+    <div id="build-info">Build: 2025-12-30T07:17:23Z · commit 2ed9c03</div>
 
     <!-- Retro Background Layers -->
     <div class="retro-bg"></div>

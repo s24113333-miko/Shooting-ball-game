@@ -258,10 +258,15 @@
             pointer-events: none;
             opacity: 0.95;
         }
-            width: 50px; 
+
+        #pause-btn {
+            background: rgba(13, 2, 33, 0.9);
+            border: 2px solid var(--retro-cyan);
+            color: var(--retro-cyan);
+            width: 50px;
             height: 50px;
             display: flex;
-            align-items: center; 
+            align-items: center;
             justify-content: center;
             font-size: 1.5rem;
             cursor: pointer;
@@ -273,6 +278,7 @@
             padding: 0;
             transform: skew(-10deg);
         }
+
         #pause-btn:hover { background: var(--retro-cyan); color: #000; box-shadow: 0 0 20px var(--retro-cyan); }
 
         /* Ball Rack UI */
@@ -482,7 +488,7 @@
     </style>
 </head>
 <body>
-    <div id="build-info">Build: 2025-12-30T07:17:23Z · commit 2ed9c03</div>
+    <div id="build-info">copyright Miko | 裴邁可</div>
 
     <!-- Retro Background Layers -->
     <div class="retro-bg"></div>
